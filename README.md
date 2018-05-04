@@ -1,6 +1,6 @@
 # 3013-Algorithms-Maughan
 
-![insert image here](https://1drv.ms/u/s!Av1ImbW-aGEytzTnEMnVxci9T1qd)
+![insert image here](https://i.imgur.com/oSgmi2B.jpg)
 
 Zachary Maughan
 
