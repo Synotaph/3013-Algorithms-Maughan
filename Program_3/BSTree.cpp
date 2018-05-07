@@ -29,7 +29,7 @@ int BSTree::Search(string word)
 			count++;
 		}
 	}
-	return -1;
+	return 0;
 }
 
 int BSTree::count(Bnode *root)

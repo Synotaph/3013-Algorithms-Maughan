@@ -18,7 +18,7 @@ void other()
 	srand(time(NULL));
 	wordlist Adjective = loadList("adjectives.txt", 15572);
 	wordlist Adverb = loadList("adverbs.txt", 3238);
-	wordlist Noun = loadList("nouns.txt", 53738);
+	wordlist Noun = loadList("nouns.txt", 25000);
 	wordlist Verb = loadList("verbs.txt", 12019);
 	int adv = 0;
 	outfile2.open("tenthousandwords.txt");
@@ -42,8 +42,9 @@ wordlist loadList(string fileName, int wordTotal)
 	wordlist wList;
 	wList.assign(wordTotal, " ");
 	int num;
+	int counter = 0;
 	infile2.open(fileName);
-	while (!infile2.eof())
+	while (counter < wordTotal)
 	{
 		infile2 >> input;
 		num = rand() % wordTotal;
@@ -62,6 +63,7 @@ wordlist loadList(string fileName, int wordTotal)
 				else
 					num++;
 			}
+		counter++;
 	}
 	infile2.clear();
 	infile2.close();
